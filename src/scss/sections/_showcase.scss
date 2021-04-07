@@ -13,4 +13,45 @@
             padding: 7rem;
         }
     }
+
+    .image-1s {
+        -webkit-animation:spin 1s linear infinite;
+        -moz-animation:spin 1s linear infinite;
+        animation:spin 1s linear infinite;
+    }
+
+    .image-2s {
+        -webkit-animation:spin 2s linear infinite;
+        -moz-animation:spin 2s linear infinite;
+        animation:spin 2s linear infinite;
+    }
+
+    .image-4s {
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+    }
+
+    .image-6s {
+        -webkit-animation:spin 6s linear infinite;
+        -moz-animation:spin 6s linear infinite;
+        animation:spin 6s linear infinite;
+    }
+
+    .image-8s {
+        -webkit-animation:spin 8s linear infinite;
+        -moz-animation:spin 8s linear infinite;
+        animation:spin 8s linear infinite;
+    }
+
+    .image-10s {
+        -webkit-animation:spin 10s linear infinite;
+        -moz-animation:spin 10s linear infinite;
+        animation:spin 10s linear infinite;
+    }
+
+
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 }
