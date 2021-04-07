@@ -10073,6 +10073,40 @@ header.masthead-meije {
     padding: 7rem;
   }
 }
+.showcase .image-1s {
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+.showcase .image-2s {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.showcase .image-4s {
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+.showcase .image-6s {
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
+}
+.showcase .image-8s {
+  -webkit-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+.showcase .image-10s {
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .testimonials {
   padding-top: 7rem;
