@@ -10053,6 +10053,10 @@ header.masthead h1 {
   }
 }
 
+header.masthead2 {
+  background: url("../assets/img/pink-header.jpg") no-repeat center center;
+}
+
 .showcase .showcase-text {
   padding: 3rem;
 }
