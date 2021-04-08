@@ -14,10 +14,12 @@ window.onload = function () {
 
     // Definitions
     var canvas = document.getElementById("paint-canvas");
+    if(canvas == null)
+        return;
     var context = canvas.getContext("2d");
     var boundings = canvas.getBoundingClientRect();
 
-    context.fillStyle = "black";
+    context.fillStyle = "pink";
     context.fillRect(0, 0, canvas.width, canvas.height);
   
     // Specifications
@@ -59,4 +61,3 @@ window.onload = function () {
       mouseY = event.clientY - boundings.top;
     }
   };
-  
