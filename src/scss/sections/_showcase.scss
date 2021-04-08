@@ -1,3 +1,11 @@
+#canvasDiv {
+  position:fixed;    /* Take the element out of the normal document flow */
+  z-index:-1;           /* Place the element behind normal content */
+  top:0;                /* Start at top of viewport */
+  left:0;               /* Start at left edge of viewport */
+  transform: none;
+}
+
 .showcase {
     .showcase-text {
         padding: 3rem;

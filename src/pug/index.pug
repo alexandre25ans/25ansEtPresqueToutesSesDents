@@ -27,11 +27,15 @@ html(lang='en')
 
     body
 
+        #canvasDiv
+
         // Navigation
-        nav.navbar.navbar-light.bg-light.static-top
+        nav#element0.navbar.navbar-light.bg-light.static-top
             .container
                 a.navbar-brand(href='index.html') Alexandre v25 2.0 zbeul edition
                 a.btn.btn-primary(href='https://fr.wikipedia.org/wiki/ACAB') ACAB ╭∩╮（︶_︶）╭∩╮
+                a.btn.btn-danger(type='button', onclick='zbeulMode()') ZBEUL++ !
+
 
         // Masthead
         header.masthead.text-white.text-center
@@ -39,7 +43,7 @@ html(lang='en')
             .container
                 .row
                     .col-xl-9.mx-auto
-                        h1.mb-5 Become more greater with the new next gen anniversary edition of this magnificent tool 
+                        h1.mb-5 Become more greater with the new next gen anniversary edition of this magnificent tool
                     .col-md-10.col-lg-8.col-xl-7.mx-auto
                         form
                             .form-row
@@ -49,7 +53,7 @@ html(lang='en')
                                     button.btn.btn-block.btn-lg.btn-primary(type='button', onclick='someFunction("https://fr.wikipedia.org/wiki/ACAB")') ACAB!
 
         // Icons Grid
-        section.features-icons.bg-light.text-center
+        section#element1.features-icons.bg-light.text-center
             .container
                 .row
                     .col-lg-3
@@ -83,7 +87,7 @@ html(lang='en')
                             p.lead.mb-0 Start laughing now with this contenu de qualité
 
         // Image Showcases
-        section.showcase
+        section#element2.showcase
             .container-fluid.p-0
                 .row.no-gutters
                     .col-lg-6
@@ -141,7 +145,7 @@ html(lang='en')
                                 | He is the archetype of an uncomplexous man
 
         // Testimonials
-        section.testimonials.text-center.bg-light
+        section#element3.testimonials.text-center.bg-light
             .container
                 h2.mb-5 What people are saying...
                 .row
@@ -193,7 +197,7 @@ html(lang='en')
                                     button.btn.btn-block.btn-lg.btn-primary(type='button', onclick='someFunction("https://fr.wikipedia.org/wiki/ACAB")') ACAB!
 
         // Footer
-        footer.footer.bg-light
+        footer#element4.footer.bg-light
             .container
                 .row
                     .col-lg-6.h-100.text-center.text-lg-left.my-auto
@@ -228,3 +232,35 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
+
+        //p5.js library
+        script(src='js/p5.min.js')
+
+        script.
+            console.log('BEGIN PSYSHAPE SCRIPT');
+            let el4 = document.getElementById('element4');
+            el4.style.setProperty("background-color", '#f8f9fa', "important");
+            let zbeul = false;
+
+            function zbeulMode() {
+              let el0 = document.getElementById('element0');
+              let el1 = document.getElementById('element1');
+              let el2 = document.getElementById('element2');
+              let el3 = document.getElementById('element3');
+              let el4 = document.getElementById('element4');
+              if (!zbeul) {
+                el0.style.setProperty("background-color", 'transparent', "important");
+                el1.style.setProperty("background-color", 'transparent', "important");
+                el2.style.setProperty("background-color", 'transparent', "important");
+                el3.style.setProperty("background-color", 'transparent', "important");
+                el4.style.setProperty("background-color", 'transparent', "important");
+                zbeul = true;
+              } else {
+                el0.style.setProperty("background-color", '#f8f9fa', "important");
+                el1.style.setProperty("background-color", '#f8f9fa', "important");
+                el2.style.setProperty("background-color", '#f8f9fa', "important");
+                el3.style.setProperty("background-color", '#f8f9fa', "important");
+                el4.style.setProperty("background-color", '#f8f9fa', "important");
+                zbeul = false;
+              }
+            }
